@@ -1,53 +1,48 @@
-import { useEffect } from "react";
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-import { HOME } from "@/constants/testIds";
+import { Toaster } from "sonner";
+import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
-
-const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
-  return (
-    <div>
-      <header className="App-header">
-        <a
-          data-testid={HOME.emergentLink}
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
-    </div>
-  );
-};
+import Home from "@/pages/Home";
+import Services from "@/pages/Services";
+import Portfolio from "@/pages/Portfolio";
+import About from "@/pages/About";
+import Testimonials from "@/pages/Testimonials";
+import FAQ from "@/pages/FAQ";
+import Consultation from "@/pages/Consultation";
+import Borough from "@/pages/Borough";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#0C0C0C] min-h-screen relative">
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}>
-            <Route index element={<Home />} />
-          </Route>
-        </Routes>
+        <Navigation />
+        <main className="relative z-10">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/consultation" element={<Consultation />} />
+            <Route path="/areas/:slug" element={<Borough />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </main>
+        <Footer />
+        <Toaster
+          position="bottom-right"
+          toastOptions={{
+            style: {
+              background: "#141414",
+              border: "1px solid #C5A059",
+              color: "#F2F0E6",
+              fontFamily: "'Manrope', sans-serif",
+            },
+          }}
+        />
       </BrowserRouter>
     </div>
   );
