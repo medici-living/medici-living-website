@@ -50,6 +50,8 @@ export const ConsultationForm = ({ defaultBorough = "" }) => {
         },
         body: JSON.stringify({
           _subject: `New consultation enquiry — ${form.name}`,
+          _replyto: form.email,
+          email: form.email,
           ...form,
           serviceLabel:
             SERVICE_OPTIONS.find((s) => s.value === form.service)?.label || "",
