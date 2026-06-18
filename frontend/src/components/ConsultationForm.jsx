@@ -10,8 +10,7 @@ import {
 import { SERVICE_OPTIONS, TIMELINE_OPTIONS, BOROUGHS } from "@/data/content";
 import { ArrowRight, Loader2 } from "lucide-react";
 
-const FORMSPREE_URL =
-  process.env.REACT_APP_FORMSPREE_URL || "https://formspree.io/f/mbdegzar";
+const FORMSPREE_URL = "https://formspree.io/f/mqeoolvz";
 
 const inputClass =
   "w-full bg-transparent border-b border-[#262626] rounded-none px-0 py-4 text-[#F2F0E6] placeholder:text-[#737373] focus:border-[#C5A059] focus:outline-none transition-colors font-sans";
