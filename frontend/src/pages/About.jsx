@@ -77,9 +77,11 @@ export default function About() {
               fluently, in both directions.
             </p>
             <p className="font-sans text-[#A3A095] text-base sm:text-lg leading-relaxed">
-              Today, we work with a select roster of clients across Mayfair,
+              Medici Living is now accepting its first briefs across Mayfair,
               Kensington, Chelsea, Notting Hill, Shoreditch, Lincoln, and
-              Stamford. Most projects come by referral. We prefer it that way.
+              Stamford — with a particular focus on referral partnerships
+              alongside Lincolnshire letting agents. We prefer to work by
+              introduction.
             </p>
           </Reveal>
         </div>

@@ -16,7 +16,7 @@ export const NAV_LINKS = [
   { label: "Services", to: "/services" },
   { label: "Portfolio", to: "/portfolio" },
   { label: "About", to: "/about" },
-  { label: "Testimonials", to: "/testimonials" },
+  { label: "Partnerships", to: "/testimonials" },
   { label: "FAQ", to: "/faq" },
 ];
 
@@ -292,7 +292,7 @@ export const FAQS = [
   },
   {
     q: "Do you guarantee a return on investment?",
-    a: "We don't promise yields, but every brief begins with a conversation about your target nightly rate, occupancy, or rental valuation — and our specification decisions are calibrated to that goal. Our hosts typically report 15–35% uplift in revenue post-completion.",
+    a: "We don't promise yields, but every brief begins with a conversation about your target nightly rate, occupancy, or rental valuation — and our specification decisions are calibrated to that goal.",
   },
   {
     q: "Do you only work in London?",
@@ -300,7 +300,7 @@ export const FAQS = [
   },
   {
     q: "Can you handle planning, building control, and listed-building consent?",
-    a: "Yes. We work with a roster of architects and consultants who manage all statutory permissions on our clients' behalf, particularly for our heritage and listed-property work in Stamford, Mayfair, and Kensington.",
+    a: "Yes. We work with a roster of architects and consultants who manage all statutory permissions on our clients' behalf, particularly for heritage and listed-property work.",
   },
   {
     q: "Will my property be managed during the works?",

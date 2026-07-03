@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
-import {
-  BRAND,
-  SERVICES,
-  PILLARS,
-  PROCESS,
-  TESTIMONIALS,
-  PORTFOLIO,
-} from "@/data/content";
+import { BRAND, SERVICES, PILLARS, PROCESS } from "@/data/content";
 import { Reveal, SectionHeading } from "@/components/Primitives";
 
 const HERO_IMG =
@@ -196,67 +189,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FEATURED PORTFOLIO */}
-      <section
-        className="py-24 md:py-32 bg-[#0C0C0C] border-t border-[#262626]"
-        data-testid="portfolio-teaser"
-      >
-        <div className="max-w-7xl mx-auto px-6 md:px-12">
-          <div className="flex flex-col md:flex-row justify-between md:items-end gap-8 mb-16">
-            <Reveal>
-              <SectionHeading
-                overline="Recent Work"
-                title="A portfolio of considered interiors."
-              />
-            </Reveal>
-            <Reveal delay={0.1}>
-              <Link
-                to="/portfolio"
-                className="inline-flex items-center text-[#C5A059] hover:text-[#A88B4B] font-sans text-xs uppercase tracking-[0.2em] underline underline-offset-4"
-                data-testid="portfolio-view-all"
-              >
-                View all projects
-                <ArrowRight size={14} className="ml-2" />
-              </Link>
-            </Reveal>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-6 auto-rows-[300px]">
-            {PORTFOLIO.slice(0, 4).map((item, i) => (
-              <Reveal key={item.title} delay={i * 0.08} className={item.span}>
-                <div className="group relative h-full overflow-hidden border border-[#262626]">
-                  <img
-                    src={item.image}
-                    alt={item.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0C]/90 via-transparent to-transparent" />
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
-                    <p className="text-overline mb-2">{item.location}</p>
-                    <h4 className="font-serif text-xl md:text-2xl text-[#F2F0E6] tracking-tight">
-                      {item.title}
-                    </h4>
-                  </div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIAL PULL QUOTE */}
+      {/* PARTNERSHIPS PULL QUOTE */}
       <section
         className="py-24 md:py-40 border-t border-[#262626]"
-        data-testid="testimonial-feature"
+        data-testid="partnerships-feature"
       >
         <div className="max-w-5xl mx-auto px-6 md:px-12">
           <Reveal>
-            <p className="text-overline mb-10">A Word From Our Clients</p>
+            <p className="text-overline mb-10">Partnerships</p>
             <blockquote className="font-serif italic text-3xl sm:text-4xl lg:text-5xl tracking-tight leading-tight text-[#F2F0E6]">
-              &ldquo;{TESTIMONIALS[0].quote}&rdquo;
+              &ldquo;Medici Living is currently accepting its first referral
+              partnerships with Lincolnshire letting agents. Get in touch to
+              discuss how we can add value to your landlord portfolio.&rdquo;
             </blockquote>
-            <p className="mt-10 font-sans text-sm text-[#C5A059] uppercase tracking-[0.2em]">
-              — {TESTIMONIALS[0].author},&nbsp;{TESTIMONIALS[0].role}
-            </p>
+            <Link
+              to="/consultation"
+              data-testid="home-partnerships-cta"
+              className="group inline-flex items-center mt-12 text-[#C5A059] hover:text-[#A88B4B] font-sans text-xs uppercase tracking-[0.2em] underline underline-offset-4"
+            >
+              Discuss a partnership
+              <ArrowRight
+                size={14}
+                className="ml-2 transition-transform group-hover:translate-x-1"
+              />
+            </Link>
           </Reveal>
         </div>
       </section>
