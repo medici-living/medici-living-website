@@ -12,13 +12,13 @@ export default function Portfolio() {
           <Reveal>
             <p className="text-overline mb-8">Portfolio</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-8xl tracking-tighter leading-[0.95] text-[#F2F0E6] max-w-4xl">
-              Our work,<br />
-              <span className="italic text-[#C5A059]">in residence.</span>
+              Our approach,<br />
+              <span className="italic text-[#C5A059]">in practice.</span>
             </h1>
             <p className="mt-10 max-w-xl font-sans text-base sm:text-lg leading-relaxed text-[#A3A095]">
-              A small selection of recently completed projects across London
-              and Lincolnshire. Each delivered to brief, on programme, and to
-              the satisfaction of clients who do not part with praise easily.
+              A selection of design concepts and interior directions that
+              reflect the Medici Living standard. Project portfolio updated as
+              commissions complete.
             </p>
           </Reveal>
         </div>
@@ -40,23 +40,10 @@ export default function Portfolio() {
                 >
                   <img
                     src={item.image}
-                    alt={item.title}
+                    alt=""
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1.5s] group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0C]/95 via-[#0C0C0C]/20 to-transparent" />
-                  <div className="absolute inset-0 p-6 md:p-8 flex flex-col justify-between">
-                    <div className="self-end">
-                      <span className="inline-block bg-[#0C0C0C]/70 backdrop-blur-sm border border-[#C5A059]/40 text-[#C5A059] font-sans text-[10px] uppercase tracking-[0.2em] px-3 py-1.5">
-                        {item.type}
-                      </span>
-                    </div>
-                    <div>
-                      <p className="text-overline mb-2">{item.location}</p>
-                      <h3 className="font-serif text-2xl md:text-3xl text-[#F2F0E6] tracking-tight leading-tight">
-                        {item.title}
-                      </h3>
-                    </div>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C0C0C]/40 via-transparent to-transparent" />
                 </div>
               </Reveal>
             ))}
