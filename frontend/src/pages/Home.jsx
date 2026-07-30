@@ -122,7 +122,7 @@ export default function Home() {
             <SectionHeading
               overline="Two Disciplines"
               title="Temporary staging. Permanent reinvention."
-              subtitle="Whichever you need, we deliver with the same eye — hotel-grade finishes, intelligent specification, and a respect for your turnover calendar."
+              subtitle="Whichever you need, we deliver with the same eye — premium-standard finishes, intelligent specification, and a respect for your turnover calendar."
             />
           </Reveal>
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">

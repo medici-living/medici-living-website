@@ -70,9 +70,8 @@ export default function About() {
               platform. We were built to close that gap.
             </p>
             <p className="font-sans text-[#A3A095] text-base sm:text-lg leading-relaxed">
-              Our team combines architectural background, hotel-grade interior
-              design experience, and a deep, working knowledge of the
-              short-let and long-let markets in London and Lincolnshire. We
+              Medici Living combines a rigorous design sensibility with a deep,
+              working knowledge of the short-let and long-let markets. We
               speak the language of materials and the language of revenue —
               fluently, in both directions.
             </p>

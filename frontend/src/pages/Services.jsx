@@ -17,7 +17,7 @@ export default function Services() {
             </h1>
             <p className="mt-10 max-w-2xl font-sans text-base sm:text-lg leading-relaxed text-[#A3A095]">
               From a three-day cosmetic restage to a sixteen-week
-              full-flat reinvention — both delivered with the same hotel-grade
+              full-flat reinvention — both delivered with the same premium-standard
               specification and editorial sensibility.
             </p>
           </Reveal>

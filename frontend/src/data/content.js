@@ -46,7 +46,7 @@ export const BOROUGHS = [
     name: "Mayfair",
     region: "London",
     blurb:
-      "The most photographed postcode in luxury. We deliver hotel-grade specification within heritage mansion blocks and boutique apartment buildings.",
+      "The most photographed postcode in luxury. We deliver premium-standard specification within heritage mansion blocks and boutique apartment buildings.",
     style: "Mansion blocks, mews houses, and ultra-prime apartments.",
     image:
       "https://images.unsplash.com/photo-1663811397207-418a92396ad5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2OTF8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBiZWRyb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzgxNzA2NTA3fDA&ixlib=rb-4.1.0&q=85",
@@ -145,12 +145,12 @@ export const SERVICES = [
     title: "Permanent Renovations",
     sub: "For the investor who plays the long game",
     description:
-      "Full-spec architectural renovations engineered for longevity, premium yield, and capital appreciation. From bathroom and kitchen rebuilds to whole-flat reconfigurations, our permanent work is specified to hotel-grade and built to last.",
+      "Full-spec architectural renovations engineered for longevity, premium yield, and capital appreciation. From bathroom and kitchen rebuilds to whole-flat reconfigurations, our permanent work is specified to a premium standard and built to last.",
     bullets: [
       "Architectural & spatial planning",
       "Bespoke joinery, stone, and metalwork",
       "Kitchens, bathrooms, and full reconfigurations",
-      "Hotel-grade specification & detailing",
+      "Premium-standard specification & detailing",
       "Project management end-to-end",
     ],
     image:
