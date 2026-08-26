@@ -43,9 +43,8 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
             className="font-serif text-5xl sm:text-7xl lg:text-8xl xl:text-[10rem] tracking-tighter leading-[0.95] text-[#F2F0E6] max-w-5xl"
           >
-            Considered<br />
-            renovations<br />
-            <span className="italic text-[#C5A059]">for rental yield.</span>
+            Why is your property<br />
+            <span className="italic text-[#C5A059]">still sitting empty?</span>
           </motion.h1>
 
           <motion.p
@@ -54,9 +53,8 @@ export default function Home() {
             transition={{ duration: 0.8, delay: 0.7 }}
             className="mt-10 max-w-xl font-sans text-base sm:text-lg leading-relaxed text-[#A3A095]"
           >
-            {BRAND.name} delivers temporary and permanent renovations for
-            rental flats and Airbnbs — engineered to elevate guest experience,
-            command higher rates, and protect long-term capital.
+            {BRAND.name} delivers staging and renovations across Lincoln
+            &amp; Lincolnshire — helping properties sell, let, and earn faster.
           </motion.p>
 
           <motion.div
