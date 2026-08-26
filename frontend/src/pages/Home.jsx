@@ -79,7 +79,7 @@ export default function Home() {
               data-testid="hero-portfolio-btn"
               className="inline-flex items-center border border-[#C5A059]/60 text-[#F2F0E6] hover:bg-[#C5A059] hover:text-[#0C0C0C] px-10 py-5 font-sans text-xs tracking-[0.2em] uppercase transition-colors duration-300 rounded-sm"
             >
-              View Our Work
+              View Design Concepts
             </Link>
           </motion.div>
         </div>
