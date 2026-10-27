@@ -248,6 +248,42 @@ export default function Home() {
         </div>
       </section>
 
+      {/* MEDICI AI */}
+      <section
+        className="py-24 md:py-32 border-t border-[#262626] bg-[#0C0C0C]"
+        data-testid="medici-ai-section"
+      >
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <Reveal>
+            <p className="text-overline mb-6">NEW PRODUCT</p>
+            <h2 className="font-serif text-4xl sm:text-5xl lg:text-7xl tracking-tight leading-tight text-[#F2F0E6] max-w-4xl">
+              Introducing{" "}
+              <span className="italic text-[#C5A059]">Medici AI.</span>
+            </h2>
+            <p className="mt-8 max-w-2xl font-sans text-base sm:text-lg leading-relaxed text-[#A3A095]">
+              Business intelligence powered by artificial intelligence.
+              Discover a smarter way to research opportunities, analyse
+              information and turn complex data into clear next steps.
+            </p>
+            <a
+              href="https://ai.mediciliving.co.uk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center mt-10 bg-[#C5A059] text-[#0C0C0C] hover:bg-[#A88B4B] px-10 py-5 font-sans text-xs tracking-[0.2em] uppercase transition-colors duration-300 rounded-sm"
+            >
+              Explore Medici AI
+              <ArrowUpRight
+                size={16}
+                className="ml-3 transition-transform group-hover:translate-x-1 group-hover:-translate-y-1"
+              />
+            </a>
+            <p className="mt-5 font-sans text-xs text-[#A3A095]">
+              ai.mediciliving.co.uk
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* FINAL CTA */}
       <section className="py-24 md:py-32 border-t border-[#262626]" data-testid="final-cta">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
